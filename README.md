@@ -13,7 +13,7 @@ Marp は VSCode 拡張機能、draw.io は Web 版を用いる。
 ###　作業
 
 1. VSCode で当フォルダを開く
-2. 「コンテナーで再度開く(Reopen in Contaner)」
+2. 左下の「><」から「コンテナーで再度開く(Reopen in Contaner)」
 3. 通常の markdown と同様にプレビュー表示
 
 ### 出力
@@ -22,8 +22,6 @@ Marp は VSCode 拡張機能、draw.io は Web 版を用いる。
 marp ./documents/slides.md -o outputs/slides.pdf --allow-local-files
 marp ./documents/slides.md -o outputs/slides.pptx --allow-local-files
 ```
-
-marp ./documents/slides.md -o output/slides.pdf
 
 ## memo
 
