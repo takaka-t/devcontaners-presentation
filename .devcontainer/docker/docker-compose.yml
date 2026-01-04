@@ -1,0 +1,10 @@
+name: devcontaners-presentation
+
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    volumes:
+      - ../../:/workspace:cached
+    tty: true
