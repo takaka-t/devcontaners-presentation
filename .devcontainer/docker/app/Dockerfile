@@ -8,11 +8,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     unzip \
     git \
+    chromium \
+    fonts-ipafont-gothic \
+    fonts-ipafont-mincho \
+    fonts-noto-cjk \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# timezone
-RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
+# set chromium path for marp
+ENV CHROME_PATH=/usr/bin/chromium
 
 # install marp cli
-RUN npm install -g @marp-team/marp-cli
+RUN npm install -g @marp-team/marp-cli@4.2.3
+
+# timezone
+RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
