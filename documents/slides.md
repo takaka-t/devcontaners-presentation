@@ -2,6 +2,7 @@
 marp: true
 theme: default
 paginate: true
+header: 開発環境の改善提案 : 環境差異と構築コストの課題を解決する
 
 backgroundImage: url('./images/background-image.png')
 backgroundSize: cover
